@@ -20,16 +20,16 @@ String handleDioError(DioError error) {
       {
         if (error.response?.statusCode == 422) {
           errorDescription = error.response?.data["body"] == null
-              ? error.response?.data["message"] ?? "Unknown Error"
+              ? error.response?.data ?? "Unknown Error"
               : error.response?.data["body"]["validations"].values.first[0] ?? error.response?.data["message"] ?? "Unknown Error";
         } else if (error.response?.statusCode == 400) {
-          errorDescription = error.response?.data["message"] ?? "Unknown Error";
+          errorDescription = error.response?.data ?? "Unknown Error";
         } else if (error.response?.statusCode == 401) {
-          errorDescription = error.response?.data["message"] ?? "Unknown Error";
+          errorDescription = error.response?.data ?? "Unknown Error";
         } else if (error.response?.statusCode == 403) {
-          errorDescription = error.response?.data["message"] ?? "Unknown Error";
+          errorDescription = error.response?.data ?? "Unknown Error";
         } else if (error.response?.statusCode == 404) {
-          errorDescription = error.response?.data["message"] ?? "Unknown Error";
+          errorDescription = error.response?.data ?? "Unknown Error";
         } else if (error.response?.statusCode == 409) {
           errorDescription =
               error.response?.data["message"] + ",\n Minutes left to join: " + error.response?.data["body"]["mins_to_join"].toString() ??

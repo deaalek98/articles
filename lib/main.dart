@@ -91,7 +91,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
 
             Locale locale = Locale(sl<AppSharedPrefs>().getLang());
             return MaterialApp(
-              title: 'MetaConnect',
+              title: 'NYT',
               onGenerateRoute: AppRouter.generateRoute,
               theme: isDark ? darkAppTheme : lightAppTheme,
               debugShowCheckedModeBanner: false,

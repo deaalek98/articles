@@ -9,7 +9,7 @@ class MainDataUseCase extends UseCase<bool, MainParams> {
 
   @override
   Future<Either<Failure, bool>> call(MainParams params) async {
-    return await repository.getMainData();
+    return await repository.getArticles();
   }
 }
 

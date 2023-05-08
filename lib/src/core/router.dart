@@ -1,6 +1,6 @@
+import 'package:articles/src/features/articles_main/articles_main/presentation/pages/articles_main_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:articles/src/features/main/presentation/pages/main_page.dart';
 
 class AppRouter {
   static String currentRoute = "/";
@@ -8,8 +8,8 @@ class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     currentRoute = settings.name ?? "/";
     switch (settings.name) {
-      case '/main':
-        return CupertinoPageRoute(settings: RouteSettings(name: settings.name), builder: (_) => const MainPage());
+      case '/articles_page':
+        return CupertinoPageRoute(settings: RouteSettings(name: settings.name), builder: (_) => const ArticlesMainPage());
 
       default:
         return CupertinoPageRoute(

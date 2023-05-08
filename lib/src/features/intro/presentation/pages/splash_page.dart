@@ -37,7 +37,8 @@ class SplashPageState extends State<SplashPage> {
                     process();
                   });
                 } else if (state is ErrorGetPublicInfoState) {
-                  AppSnackBar.show(context, "Internet connection error ", ToastType.error);
+                  AppSnackBar.show(
+                      context, "Internet connection error ", ToastType.error);
                 }
               },
               builder: (context, state) {
@@ -52,6 +53,6 @@ class SplashPageState extends State<SplashPage> {
 
   void process() {
     Navigator.of(context).popUntil((route) => route.isFirst);
-    Navigator.pushReplacementNamed(context, '/main');
+    Navigator.pushReplacementNamed(context, '/articles_page');
   }
 }

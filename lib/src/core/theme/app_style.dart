@@ -87,12 +87,14 @@ class AppTextStyle {
 final BorderRadius basicBorderRadius = BorderRadius.circular(7);
 
 class AppColors {
-  static const Color primaryColorLight = Color(4280719359);
-  static const Color primaryColorDark = Color(4280719359);
-  static const Color secondaryColorLight = Color(4281597849);
-  static const Color secondaryColorDark = Color(4281597849);
-  static const Color backgroundColorLight = Color(4294967295);
-  static const Color backgroundColorDark = Color(4294967295);
+  static const Color primaryColorLight = Color(0xFF9C4236);
+  static const Color primaryColorDark = Color(0xFFFFB4A8);
+  static const Color secondaryColorLight = Color(0xFF775651);
+  static const Color secondaryColorDark = Color(0xFFE7BDB6);
+  static const Color surfaceTintLight = Color(0xFF9C4236);
+  static const Color surfaceTintDark = Color(4281597849);
+
+
   static const Color secondaryBackgroundColorLight = Color(4294967295);
   static const Color secondaryBackgroundColorDark = Color(4294967295);
 
@@ -105,6 +107,9 @@ class AppColors {
   static const Color subscriptionGray = Color(0xFF999999);
   static const Color darkGray = Color(0xFF2A2D30);
   static const Color greenColor = Color(0xFF00CA2C);
-  static const Color redColor = Color(0xFFD54848);
+  static const Color redColor = Color(0xFF410002);
+  static const Color lightColor = Color(0xFF7D2B21);
+
+  static const Color deepRed = Color(0xFF2C1512);
   static const Color lightGrey = Color(0xFF9CA1C2);
 }

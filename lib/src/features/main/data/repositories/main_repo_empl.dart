@@ -10,9 +10,9 @@ class MainRepositoryImpl extends MainRepository {
   MainRepositoryImpl(this.mainApi);
 
   @override
-  Future<Either<Failure, bool>> getMainData() async {
+  Future<Either<Failure, bool>> getArticles() async {
     try {
-      final result = await mainApi.getMainData();
+      final result = await mainApi.getArticles();
       return result.fold((l) {
         return Left(ServerFailure(l.errorMessage, null));
       }, (r) {

@@ -59,6 +59,8 @@ dependencies:
   intl: ^0.17.0
   meta: ^1.8.0
   rename: ^2.1.1
+  cached_network_image: ^3.2.3
+
 
 dev_dependencies:
   flutter_test:
