@@ -358,6 +358,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.0"
+  flutter_chip_tags:
+    dependency: "direct main"
+    description:
+      name: flutter_chip_tags
+      sha256: "5b0e6f69a186e94b12b9d7c6dc9e47391023f89350d253ae93734ce0a93d7356"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.2"
   flutter_launcher_icons:
     dependency: "direct dev"
     description:

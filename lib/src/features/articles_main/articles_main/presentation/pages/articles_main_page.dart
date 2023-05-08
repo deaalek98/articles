@@ -23,16 +23,8 @@ class _ArticlesMainPageState extends State<ArticlesMainPage>
     with SingleTickerProviderStateMixin {
   final ArticlesMainBloc _bloc = ArticlesMainBloc();
   late TabController tabController;
-  List<String> sections = DataHelper.instance.getSections();
 
-  @override
-  void initState() {
-    _bloc.add(ArticlesMainDataEvent());
-    tabController = TabController(length: sections.length, vsync: this);
-
-    super.initState();
-  }
-
+  // List<String> sections = DataHelper.instance.getSections();
   List<ArticleModel> listArticles = [];
   List<ArticleModel> listSlider = [];
   final CarouselController _controller = CarouselController();
@@ -40,33 +32,62 @@ class _ArticlesMainPageState extends State<ArticlesMainPage>
   var scrollController = ScrollController();
 
   @override
+  void initState() {
+    _bloc.add(ArticlesMainDataEvent());
+    // tabController = TabController(length: sections.length, vsync: this);
+
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         // centerTitle: true,
         title: Text("News"),
-        actions: [
-          IconButton(
-            onPressed: () {
-              // Provider.of<ThemeProvider>(context, listen: false)
-              //     .changeTheme();
+        leading: Row(
+          children: [
+            IconButton(
+              onPressed: () {
+                // Provider.of<ThemeProvider>(context, listen: false)
+                //     .changeTheme();
 
-              BlocProvider.of<SettingsBloc>(navigatorKey.currentContext!).add(
-                  UpdateModeEvent(
-                      isDarkMode: !sl<AppSharedPrefs>().getIsDarkTheme()));
-              setState(() {});
-            },
-            icon: Icon(Icons.light_mode
+                BlocProvider.of<SettingsBloc>(navigatorKey.currentContext!).add(
+                    UpdateModeEvent(
+                        isDarkMode: !sl<AppSharedPrefs>().getIsDarkTheme()));
+                setState(() {});
+              },
+              icon: Icon(
+                Icons.light_mode
                 // (Provider.of<ThemeProvider>(context).isDark)
                 //     ? Icons.light_mode
                 //     : Icons.dark_mode,
-                ),
+                ,
+                color: Theme.of(context).primaryColor,
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.search),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.filter_list),
           ),
         ],
       ),
       body: SafeArea(
         minimum:
-            EdgeInsets.only(left: SizeConfig.w(20), right: SizeConfig.w(20)),
+            EdgeInsets.only(left: SizeConfig.w(10), right: SizeConfig.w(10)),
         bottom: false,
         child: BlocConsumer<ArticlesMainBloc, ArticlesMainState>(
           bloc: _bloc,

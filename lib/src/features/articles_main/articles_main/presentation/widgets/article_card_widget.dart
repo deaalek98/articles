@@ -2,7 +2,6 @@ import 'package:articles/src/core/common/presentation/widgets/image_network_widg
 import 'package:articles/src/core/core.dart';
 import 'package:articles/src/core/util/helper_ui.dart';
 import 'package:articles/src/features/articles_main/articles_main/domain/entities/article_model.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +15,10 @@ class ArticleCardWidget extends StatelessWidget {
     return SizedBox(
       // height: SizeConfig.w(120),
       child: GestureDetector(
-        onTap: () async {},
+        onTap: () async {
+          Navigator.of(context)
+              .pushNamed("/details_page", arguments: articleModel);
+        },
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
