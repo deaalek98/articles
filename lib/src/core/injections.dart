@@ -5,14 +5,12 @@ import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:articles/src/core/core.dart';
 import 'package:articles/src/features/intro/intro_injection.dart';
-import 'package:articles/src/features/main/main_injections.dart';
 
 final sl = GetIt.instance;
 
 Future<void> initInjections() async {
   await initCoreInjections();
   await initIntroInjections();
-  await initMainInjections();
   await initArticlesMainInjections();
   await initDetailsInjections();
 }

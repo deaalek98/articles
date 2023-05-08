@@ -19,20 +19,24 @@ class ArticlesMainBloc extends Bloc<ArticlesMainDataEvent, ArticlesMainState> {
   _getArticlesMainDataEvent(
       ArticlesMainDataEvent event, Emitter<ArticlesMainState> emitter) async {
     emitter(ArticlesMainLoadingState());
-    final response = await articlesUseCase.call(ArticlesDataParams());
+    final response =
+        await articlesUseCase.call(ArticlesDataParams(event.numDays));
     response.fold((l) {
       emitter(ArticlesMainFailureState(l.errorMessage));
     }, (r) async {
-      r.sort((a, b) => b.updated?.compareTo(a.updated ?? "") ?? 0,);
+      r.sort(
+        (a, b) => b.updated?.compareTo(a.updated ?? "") ?? 0,
+      );
       List<ArticleModel> listArticles = [];
       List<ArticleModel> slider = [];
-      if (r.length >3){
+      if (r.length > 3) {
         slider.addAll(r.getRange(0, 3));
         listArticles.addAll(r.getRange(3, r.length));
-      }else{
+      } else {
         listArticles.addAll(r);
       }
-      emitter(ArticlesMainSuccessState(listArticles: listArticles,slider: slider));
+      emitter(
+          ArticlesMainSuccessState(listArticles: listArticles, slider: slider));
     });
   }
 }

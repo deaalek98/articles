@@ -3,10 +3,9 @@ part of 'articles_main_bloc.dart';
 @immutable
 abstract class ArticlesMainEvent {}
 
-/// Event to get transaction
+/// Event to get articles
 class ArticlesMainDataEvent extends ArticlesMainEvent {
-ArticlesMainDataEvent( );
+  final int numDays;
+
+  ArticlesMainDataEvent(this.numDays);
 }
-
-
-

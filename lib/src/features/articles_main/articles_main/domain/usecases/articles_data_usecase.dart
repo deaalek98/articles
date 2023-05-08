@@ -18,5 +18,7 @@ class ArticlesDataUseCase
 }
 
 class ArticlesDataParams {
-  ArticlesDataParams();
+  int numDays;
+
+  ArticlesDataParams(this.numDays);
 }

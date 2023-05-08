@@ -3,8 +3,6 @@ import 'package:articles/src/core/core.dart';
 import 'package:articles/src/core/util/helper_ui.dart';
 import 'package:articles/src/features/articles_main/articles_main/domain/entities/article_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_chip_tags/flutter_chip_tags.dart';
-import '../../presentation/bloc/details_bloc.dart';
 
 class DetailsPage extends StatefulWidget {
   final ArticleModel articleModel;
@@ -87,8 +85,8 @@ class _DetailsPageState extends State<DetailsPage> {
                       dense: true,
                       visualDensity: VisualDensity(horizontal: 0, vertical: -4),
                       contentPadding:
-                      EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
-                      trailing:  Text(
+                          EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
+                      trailing: Text(
                         HelperUtil.instance
                             .getSections(widget.articleModel.updated ?? ""),
                         style: TextStyle(fontSize: 12, color: Colors.grey),
@@ -97,9 +95,7 @@ class _DetailsPageState extends State<DetailsPage> {
                         Icons.article_outlined,
                         color: Theme.of(context).accentColor,
                       ),
-
                     ),
-
                     Text(
                       widget.articleModel.title ?? "",
                       maxLines: 3,

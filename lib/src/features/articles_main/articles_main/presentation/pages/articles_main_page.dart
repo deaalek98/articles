@@ -30,10 +30,11 @@ class _ArticlesMainPageState extends State<ArticlesMainPage>
   final CarouselController _controller = CarouselController();
   int _current = 0;
   var scrollController = ScrollController();
+  List<int> filterDaysAgo = [1, 7, 30];
 
   @override
   void initState() {
-    _bloc.add(ArticlesMainDataEvent());
+    _bloc.add(ArticlesMainDataEvent(filterDaysAgo[1]));
     // tabController = TabController(length: sections.length, vsync: this);
 
     super.initState();
