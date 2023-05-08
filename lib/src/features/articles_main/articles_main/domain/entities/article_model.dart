@@ -12,12 +12,14 @@ class ArticleModel {
       required this.adxKeywords,
       required this.title,
       required this.media,
+      required this.updated,
       required this.abstract});
 
   late final int id;
   final String? url;
   final String? section;
   final String? adxKeywords;
+  final String? updated;
   final String? title;
   final List<MediaModel>? media;
   final String? abstract;

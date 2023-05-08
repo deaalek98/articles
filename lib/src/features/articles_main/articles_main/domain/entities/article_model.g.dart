@@ -14,6 +14,7 @@ ArticleModel _$ArticleModelFromJson(Map<String, dynamic> json) => ArticleModel(
       title: json['title'] as String?,
       media:
           (json['media'] as List<dynamic>?)?.map(MediaModel.fromJson).toList(),
+      updated: json['updated'] as String?,
       abstract: json['abstract'] as String?,
     );
 
@@ -23,6 +24,7 @@ Map<String, dynamic> _$ArticleModelToJson(ArticleModel instance) =>
       'url': instance.url,
       'section': instance.section,
       'adx_keywords': instance.adxKeywords,
+      'updated': instance.updated,
       'title': instance.title,
       'media': instance.media,
       'abstract': instance.abstract,

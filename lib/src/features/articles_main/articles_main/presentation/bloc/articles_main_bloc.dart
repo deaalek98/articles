@@ -23,7 +23,16 @@ class ArticlesMainBloc extends Bloc<ArticlesMainDataEvent, ArticlesMainState> {
     response.fold((l) {
       emitter(ArticlesMainFailureState(l.errorMessage));
     }, (r) async {
-      emitter(ArticlesMainSuccessState(r));
+      r.sort((a, b) => b.updated?.compareTo(a.updated ?? "") ?? 0,);
+      List<ArticleModel> listArticles = [];
+      List<ArticleModel> slider = [];
+      if (r.length >3){
+        slider.addAll(r.getRange(0, 3));
+        listArticles.addAll(r.getRange(3, r.length));
+      }else{
+        listArticles.addAll(r);
+      }
+      emitter(ArticlesMainSuccessState(listArticles: listArticles,slider: slider));
     });
   }
 }

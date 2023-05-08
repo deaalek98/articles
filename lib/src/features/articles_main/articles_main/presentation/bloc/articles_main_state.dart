@@ -9,10 +9,12 @@ class ArticlesMainInitial extends ArticlesMainState {}
 class ArticlesMainLoadingState extends ArticlesMainState {}
 
 class ArticlesMainSuccessState extends ArticlesMainState {
-  final List<ArticleModel> list;
+  final List<ArticleModel> listArticles;
+  final List<ArticleModel> slider;
 
-  ArticlesMainSuccessState(this.list);
+  ArticlesMainSuccessState({required this.listArticles, required this.slider});
 }
+
 class ArticlesMainFailureState extends ArticlesMainState {
   final String message;
 

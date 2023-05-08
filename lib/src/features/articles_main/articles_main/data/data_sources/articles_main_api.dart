@@ -9,7 +9,7 @@ class ArticlesMainApi {
       {required ArticlesDataParams params}) async {
     try {
       final result = (await sl<Dio>().get(
-        "7.json?api-key=$API_KEY",
+        "all-sections/7.json?api-key=$API_KEY",
       ))
           .data;
       List<dynamic>? bodyList = result["results"];

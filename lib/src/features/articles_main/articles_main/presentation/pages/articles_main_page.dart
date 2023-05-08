@@ -1,10 +1,13 @@
 import 'package:articles/main.dart';
 import 'package:articles/src/core/common/data/data_sources/app_shared_prefs.dart';
 import 'package:articles/src/core/common/presentation/bloc/settings_bloc.dart';
+import 'package:articles/src/core/common/presentation/widgets/image_network_widget.dart';
 import 'package:articles/src/core/core.dart';
 import 'package:articles/src/core/util/data_helper.dart';
+import 'package:articles/src/core/util/helper_ui.dart';
 import 'package:articles/src/features/articles_main/articles_main/domain/entities/article_model.dart';
 import 'package:articles/src/features/articles_main/articles_main/presentation/widgets/article_card_widget.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../presentation/bloc/articles_main_bloc.dart';
@@ -30,7 +33,11 @@ class _ArticlesMainPageState extends State<ArticlesMainPage>
     super.initState();
   }
 
-  List<ArticleModel> list = [];
+  List<ArticleModel> listArticles = [];
+  List<ArticleModel> listSlider = [];
+  final CarouselController _controller = CarouselController();
+  int _current = 0;
+  var scrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
@@ -57,63 +64,55 @@ class _ArticlesMainPageState extends State<ArticlesMainPage>
           ),
         ],
       ),
-      body: BlocConsumer<ArticlesMainBloc, ArticlesMainState>(
-        bloc: _bloc,
-        listener: (context, state) {
-          if (state is ArticlesMainSuccessState) {
-            list.clear();
-            list.addAll(state.list);
-          }
-        },
-        builder: (context, state) {
-          return Column(
-            children: [
-              // TabBar(
-              //   isScrollable: true,
-              //   controller: tabController,
-              //   tabs: sections
-              //       .map(
-              //         (section) => Container(
-              //           padding:
-              //               const EdgeInsets.symmetric(horizontal: 5, vertical: 20),
-              //           child: Text(
-              //             section,
-              //           ),
-              //         ),
-              //       )
-              //       .toList(),
-              // ),
-              Expanded(
-                child: TabBarView(
-                  controller: tabController,
-                  children: sections
-                      .map(
-                        (section) => Container(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 5, vertical: 20),
-                          child: ListView.builder(
-                            itemCount: list.length,
-                            itemBuilder: (context, i) {
-                              return Column(
-                                children: [
-                                  ArticleCardWidget(
-                                    articleModel: list[i],
-                                  ),
-                                  if (i != (list.length - 1)) ...{
-                                    Divider(thickness: 0.4,)
-                                  }
-                                ],
-                              );
-                            },
+      body: SafeArea(
+        minimum:
+            EdgeInsets.only(left: SizeConfig.w(20), right: SizeConfig.w(20)),
+        bottom: false,
+        child: BlocConsumer<ArticlesMainBloc, ArticlesMainState>(
+          bloc: _bloc,
+          listener: (context, state) {
+            if (state is ArticlesMainSuccessState) {
+              listArticles.clear();
+              listArticles.addAll(state.listArticles);
+              listSlider.clear();
+              listSlider.addAll(state.slider);
+            }
+          },
+          builder: (context, state) {
+            return NestedScrollView(
+                controller: scrollController,
+                physics: ScrollPhysics(parent: PageScrollPhysics()),
+                headerSliverBuilder:
+                    (BuildContext context, bool innerBoxIsScrolled) {
+                  return <Widget>[
+                    SliverList(
+                      delegate: SliverChildListDelegate([_buildSliderWidget()]),
+                    ),
+                  ];
+                },
+                body: Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 20),
+                  child: ListView.builder(
+                    itemCount: listArticles.length,
+                    itemBuilder: (context, i) {
+                      return Column(
+                        children: [
+                          ArticleCardWidget(
+                            articleModel: listArticles[i],
                           ),
-                        ),
-                      )
-                      .toList(),
-                ),
-              ),
-            ],
-          );
-        },
+                          if (i != (listArticles.length - 1)) ...{
+                            Divider(
+                              thickness: 0.4,
+                            )
+                          }
+                        ],
+                      );
+                    },
+                  ),
+                ));
+          },
+        ),
       ),
     );
 
@@ -143,5 +142,111 @@ class _ArticlesMainPageState extends State<ArticlesMainPage>
     //     ),
     //   ),
     // );
+  }
+
+  _buildSliderWidget() {
+    return CarouselSlider(
+      items: listSlider
+          .map((e) => Container(
+                padding: EdgeInsets.all(4),
+                height: SizeConfig.h(240),
+                child: Stack(
+                  alignment: Alignment.bottomLeft,
+                  children: [
+                    ImageNetworkWidget(
+                        width: double.infinity,
+                        height: SizeConfig.h(280),
+                        url: ((e.media?.length ?? 0) > 0) &&
+                                ((e.media?[e.media!.length - 1].metadataList
+                                            ?.length ??
+                                        0) >
+                                    0)
+                            ? (e
+                                    .media?[e.media!.length - 1]
+                                    .metadataList?[e.media![e.media!.length - 1]
+                                            .metadataList!.length -
+                                        1]
+                                    .url ??
+                                "")
+                            : ""),
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.0),
+                        gradient: LinearGradient(
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                          colors: [
+                            Colors.black,
+                            Colors.black.withOpacity(0.0),
+                          ],
+                          stops: [
+                            0.0,
+                            1.0,
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.all(10),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.pink,
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 23,
+                              vertical: 8,
+                            ),
+                            child: Text(
+                              'Latest News',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                          // Spacer(),
+                          SizedBox(
+                            height: SizeConfig.h(4),
+                          ),
+                          Text(
+                            e.title ?? "",
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style:
+                                TextStyle(fontSize: 17, color: AppColors.white),
+                          ),
+                          Text(
+                            HelperUtil.instance.getSections(e.updated ?? ""),
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 10,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ))
+          .toList(),
+      carouselController: _controller,
+      options: CarouselOptions(
+          autoPlay: true,
+          // enlargeCenterPage: true,
+          viewportFraction: 1.0,
+          height: SizeConfig.h(240),
+          enlargeCenterPage: false,
+          onPageChanged: (index, reason) {
+            setState(() {
+              _current = index;
+            });
+          }),
+    );
   }
 }

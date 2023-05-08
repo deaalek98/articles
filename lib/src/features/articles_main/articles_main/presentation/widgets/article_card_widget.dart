@@ -1,4 +1,6 @@
+import 'package:articles/src/core/common/presentation/widgets/image_network_widget.dart';
 import 'package:articles/src/core/core.dart';
+import 'package:articles/src/core/util/helper_ui.dart';
 import 'package:articles/src/features/articles_main/articles_main/domain/entities/article_model.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
@@ -18,67 +20,34 @@ class ArticleCardWidget extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            ClipRRect(
-              borderRadius: BorderRadius.circular(8.0),
-              child: CachedNetworkImage(
-                imageUrl: ((articleModel.media?.length ?? 0) > 0) &&
+            ImageNetworkWidget(
+                url: ((articleModel.media?.length ?? 0) > 0) &&
                         ((articleModel.media?[0].metadataList?.length ?? 0) > 0)
                     ? (articleModel.media?[0].metadataList?[0].url ?? "")
-                    : "",
-                fit: BoxFit.cover,
-                width: SizeConfig.w(100),
-                height: SizeConfig.w(100),
-                errorWidget: (context, url, error) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      'assets/images/img_not_found.jpg',
-                      fit: BoxFit.cover,
-                      width: SizeConfig.w(100),
-                      height: SizeConfig.w(100),
-                    ),
-                  );
-                },
-                placeholder: (context, url) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.asset(
-                      'assets/images/img_placeholder.jpg',
-                      fit: BoxFit.cover,
-                      width: SizeConfig.w(100),
-                      height: SizeConfig.w(100),
-                    ),
-                  );
-                },
-              ),
-            ),
+                    : ""),
             SizedBox(
               width: SizeConfig.w(14),
             ),
             Expanded(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
                   Text(
                     articleModel.title ?? "",
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 17,
                     ),
                   ),
-                  Text(
-                    articleModel.section ?? "",
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 14,
-                    ),
+                  SizedBox(
+                    height: SizeConfig.h(10),
                   ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
                       Text(
-                        "strPublishedAt",
+                        articleModel.section ?? "",
                         style: TextStyle(
                           color: Colors.grey,
                           fontSize: 12,
@@ -92,7 +61,8 @@ class ArticleCardWidget extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "itemArticle name",
+                        HelperUtil.instance
+                            .getSections(articleModel.updated ?? ""),
                         style: TextStyle(
                           color: Colors.grey,
                           fontSize: 12,
