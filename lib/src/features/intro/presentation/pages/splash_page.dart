@@ -1,3 +1,4 @@
+import 'package:articles/src/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:articles/src/core/common/presentation/widgets/app_snack_bar.dart';
@@ -28,26 +29,34 @@ class SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: BlocConsumer(
-              bloc: _introBloc,
-              listener: (context, state) {
-                if (state is SuccessGetPublicInfoState) {
-                  Future.delayed(const Duration(seconds: 2), () {
-                    process();
-                  });
-                } else if (state is ErrorGetPublicInfoState) {
-                  AppSnackBar.show(
-                      context, "Internet connection error ", ToastType.error);
-                }
-              },
-              builder: (context, state) {
-                return Stack(
-                  children: const [
-                    Center(child: Text("Splash")),
-                  ],
-                );
-              })),
+      body: BlocConsumer(
+          bloc: _introBloc,
+          listener: (context, state) {
+            if (state is SuccessGetPublicInfoState) {
+              process();
+
+            } else if (state is ErrorGetPublicInfoState) {
+              AppSnackBar.show(
+                  context, "Internet connection error ", ToastType.error);
+            }
+          },
+          builder: (context, state) {
+            return Stack(
+              children:   [
+                Container(
+                  color: AppColors.BackgroundColorLight,
+                  child: Center(child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.asset(
+                      "assets/images/app_logo.png",
+                      fit: BoxFit.cover,
+                      height: SizeConfig.h(200),
+                    ),
+                  )),
+                ),
+              ],
+            );
+          }),
     );
   }
 

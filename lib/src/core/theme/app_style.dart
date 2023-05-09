@@ -92,6 +92,7 @@ class AppColors {
 
 
   static const Color secondaryBackgroundColorDark = Color(4294967295);
+  static const Color BackgroundColorLight = Color(0xFFfef4e8);
 
   static const Color transparent = Colors.transparent;
   static const Color white = Color(0xFFFFFFFF);
