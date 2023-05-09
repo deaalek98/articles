@@ -35,14 +35,10 @@ class _DetailsPageState extends State<DetailsPage> {
         shrinkWrap: false,
         slivers: <Widget>[
           SliverAppBar(
-            title: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [],
-            ),
-            backgroundColor: Theme.of(context).accentColor.withOpacity(0.9),
+
             expandedHeight: MediaQuery.of(context).size.height * 0.43,
             elevation: 0,
-            iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
+            iconTheme: IconThemeData(color: Theme.of(context).primaryColor,),
             flexibleSpace: FlexibleSpaceBar(
                 collapseMode: CollapseMode.parallax,
                 background: ImageNetworkWidget(
@@ -114,12 +110,12 @@ class _DetailsPageState extends State<DetailsPage> {
                       widget.articleModel.title ?? "",
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(fontSize: 17, color: Colors.black, fontWeight: FontWeight.bold),
+                      style: AppTextStyle.smiBold(sizeText: SizeText.size17),
                       textAlign: TextAlign.start,
                     ),
                     Text(
                       widget.articleModel.abstract ?? "",
-                      style: TextStyle(fontSize: 15, color: Colors.black54),
+                      style: AppTextStyle.regular(sizeText: SizeText.size14),
                     ),
                   ],
                 ),
@@ -130,28 +126,5 @@ class _DetailsPageState extends State<DetailsPage> {
       ),
     );
 
-    return Scaffold(
-      body: NestedScrollView(
-          controller: scrollController,
-          physics: ScrollPhysics(parent: PageScrollPhysics()),
-          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-            return <Widget>[
-              SliverList(
-                delegate: SliverChildListDelegate([
-                  ImageNetworkWidget(
-                      width: double.infinity,
-                      height: SizeConfig.h(280),
-                      url: ((widget.articleModel.media?.length ?? 0) > 0) &&
-                              ((widget.articleModel.media?[widget.articleModel.media!.length - 1].metadataList?.length ?? 0) > 0)
-                          ? (widget.articleModel.media?[widget.articleModel.media!.length - 1]
-                                  .metadataList?[widget.articleModel.media![widget.articleModel.media!.length - 1].metadataList!.length - 1].url ??
-                              "")
-                          : "")
-                ]),
-              ),
-            ];
-          },
-          body: Text("")),
-    );
   }
 }

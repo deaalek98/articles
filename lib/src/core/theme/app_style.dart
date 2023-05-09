@@ -58,52 +58,47 @@ class AppTextStyle {
   /// /////////////////////////////////////////////SmiBold////////////////////////////////////////////////
 
   static TextStyle smiBold({SizeText sizeText = SizeText.size18}) {
-    bool isDark = sl<AppSharedPrefs>().getIsDarkTheme();
-    if (isDark) {
-      return TextStyle(fontFamily: "MyriadPro", fontWeight: FontWeight.w600, fontSize: sizeText.getSizeInt(), color: AppColors.primaryColorDark);
-    }
-    return TextStyle(fontFamily: "MyriadPro", fontWeight: FontWeight.w600, fontSize: sizeText.getSizeInt(), color: AppColors.primaryColorLight);
+    return TextStyle(fontFamily: "MyriadPro", fontWeight: FontWeight.w600, fontSize: sizeText.getSizeInt() );
+
   }
 
   /// /////////////////////////////////////////////Med////////////////////////////////////////////////
 
   static TextStyle med({SizeText sizeText = SizeText.size18}) {
-    bool isDark = sl<AppSharedPrefs>().getIsDarkTheme();
-    if (isDark) {
-      return TextStyle(fontFamily: "MyriadPro", fontWeight: FontWeight.w500, fontSize: sizeText.getSizeInt(), color: AppColors.primaryColorDark);
-    }
-    return TextStyle(fontFamily: "MyriadPro", fontWeight: FontWeight.w500, fontSize: sizeText.getSizeInt(), color: AppColors.primaryColorLight);
+    return TextStyle(fontFamily: "MyriadPro", fontWeight: FontWeight.w500, fontSize: sizeText.getSizeInt() );
+
   }
 
   /// /////////////////////////////////////////////Regular////////////////////////////////////////////////
 
   static TextStyle regular({SizeText sizeText = SizeText.size18}) {
-    bool isDark = sl<AppSharedPrefs>().getIsDarkTheme();
-    if (isDark) {
-      return TextStyle(fontFamily: "MyriadPro", fontSize: sizeText.getSizeInt(), color: AppColors.primaryColorDark);
-    }
-    return TextStyle(fontFamily: "MyriadPro", fontSize: sizeText.getSizeInt(), color: AppColors.primaryColorLight);
+    // bool isDark = sl<AppSharedPrefs>().getIsDarkTheme();
+    return TextStyle(fontFamily: "MyriadPro", fontSize: sizeText.getSizeInt() );
+
   }
 }
 
 final BorderRadius basicBorderRadius = BorderRadius.circular(7);
 
 class AppColors {
-  static const Color primaryColorLight = Color(0xFF9C4236);
-  static const Color primaryColorDark = Color(0xFFFFB4A8);
-  static const Color secondaryColorLight = Color(0xFF775651);
-  static const Color secondaryColorDark = Color(0xFFE7BDB6);
-  static const Color surfaceTintLight = Color(0xFF9C4236);
+  static const Color primaryColorLight = Color(0xFFB01953);
+  static const Color surfaceTintLight = Color(0xFF941647);
+  static const Color secondaryColorLight = Color(0xFFD02366);
+  static const Color secondaryBackgroundColorLight = Color(4294967295);
+
+  static const Color primaryColorDark = Color(0xFFF6E3E9);
+  static const Color secondaryColorDark = Color(0xFFF8DDE5);
   static const Color surfaceTintDark = Color(4281597849);
 
 
-  static const Color secondaryBackgroundColorLight = Color(4294967295);
   static const Color secondaryBackgroundColorDark = Color(4294967295);
 
   static const Color transparent = Colors.transparent;
   static const Color white = Color(0xFFFFFFFF);
   static const Color lineGrey = Color(0xFF343243);
   static const Color black = Color(0xFF000000);
+  static const Color darkGrey = Color(0xFF363535);
+
   static const Color primaryGrey = Color(0xFF8D8F92);
   static const Color secondaryGrey = Color(0xFFB6B0AA);
   static const Color subscriptionGray = Color(0xFF999999);

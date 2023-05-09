@@ -93,7 +93,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                 showUpperSheetState(() {});
               });
             },
-            icon: Icon(Icons.filter_list),
+            icon: Icon(
+              Icons.filter_list,
+            ),
           ),
         ],
       ),
@@ -135,9 +137,10 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                 physics: ScrollPhysics(parent: PageScrollPhysics()),
                 headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
                   return <Widget>[
-                    SliverList(
-                      delegate: SliverChildListDelegate([_buildSliderWidget()]),
-                    ),
+                    if (listSlider.length > 0)
+                      SliverList(
+                        delegate: SliverChildListDelegate([_buildSliderWidget()]),
+                      ),
                   ];
                 },
                 body: Container(

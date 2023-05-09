@@ -15,16 +15,15 @@ class ArticleCardWidget extends StatelessWidget {
     return SizedBox(
       // height: SizeConfig.w(120),
       child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
         onTap: () async {
-          Navigator.of(context)
-              .pushNamed("/details_page", arguments: articleModel);
+          Navigator.of(context).pushNamed("/details_page", arguments: articleModel);
         },
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             ImageNetworkWidget(
-                url: ((articleModel.media?.length ?? 0) > 0) &&
-                        ((articleModel.media?[0].metadataList?.length ?? 0) > 0)
+                url: ((articleModel.media?.length ?? 0) > 0) && ((articleModel.media?[0].metadataList?.length ?? 0) > 0)
                     ? (articleModel.media?[0].metadataList?[0].url ?? "")
                     : ""),
             SizedBox(
@@ -38,9 +37,7 @@ class ArticleCardWidget extends StatelessWidget {
                     articleModel.title ?? "",
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontSize: 17,
-                    ),
+                    style: AppTextStyle.regular(sizeText: SizeText.size17),
                   ),
                   SizedBox(
                     height: SizeConfig.h(10),
@@ -50,24 +47,20 @@ class ArticleCardWidget extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         articleModel.section ?? "",
-                        style: TextStyle(
+                        style: AppTextStyle.regular(sizeText: SizeText.size12).copyWith(
                           color: Colors.grey,
-                          fontSize: 12,
                         ),
                       ),
                       Text(
                         ' | ',
-                        style: TextStyle(
+                        style: AppTextStyle.regular(sizeText: SizeText.size12).copyWith(
                           color: Colors.grey,
-                          fontSize: 12,
                         ),
                       ),
                       Text(
-                        HelperUtil.instance
-                            .getSections(articleModel.updated ?? ""),
-                        style: TextStyle(
+                        HelperUtil.instance.getSections(articleModel.updated ?? ""),
+                        style: AppTextStyle.regular(sizeText: SizeText.size12).copyWith(
                           color: Colors.grey,
-                          fontSize: 12,
                         ),
                       ),
                     ],
@@ -79,53 +72,5 @@ class ArticleCardWidget extends StatelessWidget {
         ),
       ),
     );
-    //
-    // return Padding(
-    //   padding: const EdgeInsets.all(10),
-    //   child: InkWell(
-    //     borderRadius: BorderRadius.circular(20),
-    //     onTap: () {
-    //       Navigator.of(context).pushNamed("details_page");
-    //     },
-    //     child: Container(
-    //       height: MediaQuery.of(context).size.height * 0.3,
-    //       width: double.infinity,
-    //       decoration: BoxDecoration(
-    //         color: Colors.grey.shade400,
-    //         borderRadius: BorderRadius.circular(20),
-    //         image: DecorationImage(
-    //           fit: BoxFit.cover,
-    //           image: NetworkImage(
-    //               "https://puducherry-dt.gov.in/wp-content/themes/district-theme-2/images/blank.jpg"
-    //             // (news.image == "null")
-    //             //     ? "https://puducherry-dt.gov.in/wp-content/themes/district-theme-2/images/blank.jpg"
-    //             //     : news.image,
-    //           ),
-    //         ),
-    //       ),
-    //       alignment: Alignment.bottomCenter,
-    //       child: Container(
-    //         width: double.infinity,
-    //         decoration: BoxDecoration(
-    //           color: Colors.black.withOpacity(0.7),
-    //           borderRadius: const BorderRadius.only(
-    //             bottomLeft: Radius.circular(20),
-    //             bottomRight: Radius.circular(20),
-    //           ),
-    //         ),
-    //         padding: const EdgeInsets.all(15),
-    //         child: Text(
-    //           "deaa",
-    //           // (news.title == "null") ? "" : news.title,
-    //           style: Theme.of(context).textTheme.titleMedium?.merge(
-    //             const TextStyle(
-    //               color: Colors.white,
-    //             ),
-    //           ),
-    //         ),
-    //       ),
-    //     ),
-    //   ),
-    // );
   }
 }
