@@ -35,7 +35,6 @@ class _DetailsPageState extends State<DetailsPage> {
         shrinkWrap: false,
         slivers: <Widget>[
           SliverAppBar(
-
             expandedHeight: MediaQuery.of(context).size.height * 0.43,
             elevation: 0,
             iconTheme: IconThemeData(color: Theme.of(context).primaryColor,),
@@ -43,6 +42,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 collapseMode: CollapseMode.parallax,
                 background: ImageNetworkWidget(
                     width: double.infinity,
+                    radius: 0,
                     height: SizeConfig.h(280),
                     url: ((widget.articleModel.media?.length ?? 0) > 0) &&
                             ((widget.articleModel.media?[widget.articleModel.media!.length - 1].metadataList?.length ?? 0) > 0)

@@ -6,15 +6,27 @@ class ImageNetworkWidget extends StatelessWidget {
   final String url;
   final double? width;
   final double? height;
+  final double? radius;
 
   const ImageNetworkWidget(
-      {Key? key, required this.url, this.width, this.height})
+      {Key? key, required this.url, this.width, this.height, this.radius})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    if (url.isEmpty) {
+      return SizedBox(
+        width: width ?? SizeConfig.w(90),
+        height: height ?? SizeConfig.w(90),
+        child: Image.asset(
+          'assets/images/img_not_found.jpg',
+          fit: BoxFit.cover,
+          height: SizeConfig.w(90),
+        ),
+      );
+    }
     return ClipRRect(
-      borderRadius: BorderRadius.circular(8.0),
+      borderRadius: BorderRadius.circular(radius ?? 8),
       child: CachedNetworkImage(
         imageUrl: url,
         fit: BoxFit.cover,

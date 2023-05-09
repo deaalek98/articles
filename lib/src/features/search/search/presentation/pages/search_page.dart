@@ -48,20 +48,17 @@ class _SearchPageState extends State<SearchPage> {
                 padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 20),
                 child: Column(
                   children: [
-                    SizedBox(
-                      height: SizeConfig.h(60),
-                      child: TextField(
-                        cursorHeight: 25,
-                        onChanged: (value) {
-                          _bloc.add(SearchDataEvent(searchText: value, listArticle: widget.listArticle));
-                          // Method For Searching
-                        },
-                        decoration: InputDecoration(
-                          hintText: "Search Data",
-                          prefixIcon: Icon(Icons.search),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.all(Radius.circular(17.0)),
-                          ),
+                    TextField(
+                      cursorHeight: 25,
+                      onChanged: (value) {
+                        _bloc.add(SearchDataEvent(searchText: value, listArticle: widget.listArticle));
+                        // Method For Searching
+                      },
+                      decoration: InputDecoration(
+                        hintText: "Search Data",
+                        prefixIcon: Icon(Icons.search),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(17.0)),
                         ),
                       ),
                     ),

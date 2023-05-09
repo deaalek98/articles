@@ -284,6 +284,8 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           height: SizeConfig.h(10),
         ),
         Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Spacer(),
             for (int i = 0; i < Helper.getListFilter().length; i++) ...{
@@ -307,6 +309,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   child: Center(
                       child: Text(
                     Helper.getListFilter()[i] <= 1 ? "${Helper.getListFilter()[i]} Day" : "${Helper.getListFilter()[i]} Days",
+                    textAlign: TextAlign.center,
                     style: AppTextStyle.smiBold(
                       sizeText: SizeText.size18,
                     ).copyWith(
