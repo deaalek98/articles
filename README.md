@@ -27,11 +27,11 @@ You can facilitate the process of refactoring the code in a quick way using the 
 
 
 ## Screenshots
-
-![App Screenshot](https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/1.png | width=200)
-![App Screenshot](https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/2.png | width=200)
-![App Screenshot](https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/3.png | width=200)
-![App Screenshot](https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/4.png | width=200)
+<img src="https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/1.png" alt="" data-canonical-src="https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/1.png width="200" height="400" />
+![App Screenshot](https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/1.png)
+![App Screenshot](https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/2.png)
+![App Screenshot](https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/3.png)
+![App Screenshot](https://raw.githubusercontent.com/deaalek98/articles/main/assets/screenshot/4.png)
 
 ## Feedback
 
