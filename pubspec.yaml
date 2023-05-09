@@ -62,6 +62,7 @@ dependencies:
   cached_network_image: ^3.2.3
   carousel_slider: ^4.2.1
   flutter_chip_tags: ^2.0.2
+  shimmer: ^2.0.0
 
 
 dev_dependencies:

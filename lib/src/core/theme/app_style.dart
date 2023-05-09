@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import '../core.dart';
 
-enum SizeText { size12, size13, size14, size15, size16, size17, size18, size19, size20, size21, size22, size23, size24, size25, size26, size27 }
+enum SizeText { size10, size12, size13, size14, size15, size16, size17, size18, size19, size20, size21, size22, size23, size24, size25, size26, size27 }
 
 extension SizeInt on SizeText {
   double getSizeInt() {
     switch (this) {
+      case SizeText.size10:
+        return 10;
       case SizeText.size12:
         return 12;
       case SizeText.size13:

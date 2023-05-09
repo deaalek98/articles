@@ -7,3 +7,4 @@ const String API_KEY = "MXmpuN1I5UhLwAizFnW3GVKnuDAwAoUC";
 const String SVG_PATH = "assets/svg_images/";
 const String IMAGE_PATH = "assets/images/";
 const String THEME = "theme";
+const String FILTER_DAYS = "filter_days";

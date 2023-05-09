@@ -15,6 +15,12 @@ class AppSharedPrefs {
     await _preferences.setBool(THEME, isDark);
   }
 
+  Future<void> setFilter(int days) async {
+    await _preferences.setInt(FILTER_DAYS, days);
+  }
+  int getFilter() {
+    return _preferences.getInt("FILTER_DAYS") ?? Helper.getListFilter()[0];
+  }
   String getLang() {
     return _preferences.getString("lang") ?? "en";
   }

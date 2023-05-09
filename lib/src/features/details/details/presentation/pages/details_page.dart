@@ -49,46 +49,60 @@ class _DetailsPageState extends State<DetailsPage> {
                     width: double.infinity,
                     height: SizeConfig.h(280),
                     url: ((widget.articleModel.media?.length ?? 0) > 0) &&
-                            ((widget
-                                        .articleModel
-                                        .media?[
-                                            widget.articleModel.media!.length -
-                                                1]
-                                        .metadataList
-                                        ?.length ??
-                                    0) >
-                                0)
-                        ? (widget
-                                .articleModel
-                                .media?[widget.articleModel.media!.length - 1]
-                                .metadataList?[widget
-                                        .articleModel
-                                        .media![
-                                            widget.articleModel.media!.length -
-                                                1]
-                                        .metadataList!
-                                        .length -
-                                    1]
-                                .url ??
+                            ((widget.articleModel.media?[widget.articleModel.media!.length - 1].metadataList?.length ?? 0) > 0)
+                        ? (widget.articleModel.media?[widget.articleModel.media!.length - 1]
+                                .metadataList?[widget.articleModel.media![widget.articleModel.media!.length - 1].metadataList!.length - 1].url ??
                             "")
                         : "")),
           ),
           SliverToBoxAdapter(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 20),
+              decoration: BoxDecoration(
+                // color: Colors.grey.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(18.0),
+              ),
               child: SingleChildScrollView(
                 child: Wrap(
                   runSpacing: 8,
                   children: [
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                          children: widget.articleModel.adxKeywords
+                              ?.split(";")
+                              .map(
+                                (e) => Container(
+                              margin: EdgeInsets.only(left: 2),
+                              child: FilterChip(
+                                // backgroundColor: AppColors.lightGrey,
+                                onSelected: (val) {},
+                                backgroundColor: Colors.black.withOpacity(0.6),
+                                labelPadding: EdgeInsets.only(left: 3, right: 3),
+                                padding: EdgeInsets.all(2),
+                                labelStyle: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                shape: StadiumBorder(side: BorderSide()),
+                                side: BorderSide(color: Colors.transparent),
+                                label: Text(
+                                  e,
+                                  style: AppTextStyle.regular(sizeText: SizeText.size10).copyWith(color: Colors.white),
+                                ),
+                              ),
+                            ),
+                          )
+                              .toList() ??
+                              []),
+                    ),
+
                     ListTile(
                       horizontalTitleGap: 0,
                       dense: true,
                       visualDensity: VisualDensity(horizontal: 0, vertical: -4),
-                      contentPadding:
-                          EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
                       trailing: Text(
-                        HelperUtil.instance
-                            .getSections(widget.articleModel.updated ?? ""),
+                        HelperUtil.instance.getSections(widget.articleModel.updated ?? ""),
                         style: TextStyle(fontSize: 12, color: Colors.grey),
                       ),
                       leading: Icon(
@@ -100,44 +114,13 @@ class _DetailsPageState extends State<DetailsPage> {
                       widget.articleModel.title ?? "",
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                          fontSize: 17,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize: 17, color: Colors.black, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.start,
                     ),
                     Text(
                       widget.articleModel.abstract ?? "",
                       style: TextStyle(fontSize: 15, color: Colors.black54),
                     ),
-                    Wrap(
-                        children: widget.articleModel.adxKeywords
-                                ?.split(";")
-                                .map(
-                                  (e) => Container(
-                                    margin: EdgeInsets.only(left: 2),
-                                    child: FilterChip(
-                                      // backgroundColor: AppColors.lightGrey,
-                                      onSelected: (val) {},
-                                      backgroundColor: Colors.grey,
-                                      padding: EdgeInsets.all(2),
-                                      labelStyle: TextStyle(
-                                        color: Colors.white,
-                                      ),
-                                      shape: StadiumBorder(side: BorderSide()),
-                                      side:
-                                          BorderSide(color: Colors.transparent),
-                                      label: Text(
-                                        e,
-                                        style: AppTextStyle.regular(
-                                                sizeText: SizeText.size12)
-                                            .copyWith(color: Colors.white),
-                                      ),
-                                    ),
-                                  ),
-                                )
-                                .toList() ??
-                            []),
                   ],
                 ),
               ),
@@ -159,27 +142,9 @@ class _DetailsPageState extends State<DetailsPage> {
                       width: double.infinity,
                       height: SizeConfig.h(280),
                       url: ((widget.articleModel.media?.length ?? 0) > 0) &&
-                              ((widget
-                                          .articleModel
-                                          .media?[widget
-                                                  .articleModel.media!.length -
-                                              1]
-                                          .metadataList
-                                          ?.length ??
-                                      0) >
-                                  0)
-                          ? (widget
-                                  .articleModel
-                                  .media?[widget.articleModel.media!.length - 1]
-                                  .metadataList?[widget
-                                          .articleModel
-                                          .media![widget
-                                                  .articleModel.media!.length -
-                                              1]
-                                          .metadataList!
-                                          .length -
-                                      1]
-                                  .url ??
+                              ((widget.articleModel.media?[widget.articleModel.media!.length - 1].metadataList?.length ?? 0) > 0)
+                          ? (widget.articleModel.media?[widget.articleModel.media!.length - 1]
+                                  .metadataList?[widget.articleModel.media![widget.articleModel.media!.length - 1].metadataList!.length - 1].url ??
                               "")
                           : "")
                 ]),

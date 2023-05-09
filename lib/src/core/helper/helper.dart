@@ -15,10 +15,13 @@ class Helper {
   static getSvgImage(String filename) {
     return SVG_PATH + filename;
   }
+
   static getImage(String filename) {
     return IMAGE_PATH + filename;
   }
 
-
-
+  //Filter days
+  static List<int> getListFilter() {
+    return [1, 7, 30];
+  }
 }
