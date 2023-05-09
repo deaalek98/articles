@@ -27,4 +27,23 @@ class ArticleModel {
   factory ArticleModel.fromJson(json) => _$ArticleModelFromJson(json);
 
   toJson() => _$ArticleModelToJson(this);
+
+  @override
+  bool operator ==(Object object) {
+    if (identical(this, object)) {
+      return true;
+    }
+    if (object.runtimeType != runtimeType) {
+      return false;
+    }
+    if (object is ArticleModel) {
+      return object.id == id;
+    }
+
+    return false;
+  }
+  @override
+  String toString() {
+    return 'ArticleModel{id: ${id}, title: ${title}}';
+  }
 }

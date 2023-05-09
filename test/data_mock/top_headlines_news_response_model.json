@@ -1,0 +1,1161 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "uri": "nyt://article/85c60688-5a6a-58fe-a055-eb4865819355",
+      "url": "https://www.nytimes.com/2023/05/02/nyregion/trump-carroll-rape-lawsuit.html",
+      "id": 100000008883907,
+      "asset_id": 100000008883907,
+      "source": "New York Times",
+      "published_date": "2023-05-02",
+      "updated": "2023-05-03 12:29:27",
+      "section": "New York",
+      "subsection": "",
+      "nytdsection": "new york",
+      "adx_keywords": "Suits and Litigation (Civil);Sex Crimes;Libel and Slander;Carroll, E Jean;Birnbach, Lisa;Trump, Donald J",
+      "column": null,
+      "byline": "By Kate Christobek, Benjamin Weiser and Lola Fadulu",
+      "type": "Article",
+      "title": "Carroll’s Friend Tells of a Fraught Call Reporting an Attack by Trump",
+      "abstract": "E. Jean Carroll, who has accused the former president of raping her, has finished her cross-examination. On Tuesday, her lawyers called witnesses to bolster her case.",
+      "des_facet": [
+        "Suits and Litigation (Civil)",
+        "Sex Crimes",
+        "Libel and Slander"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Carroll, E Jean",
+        "Birnbach, Lisa",
+        "Trump, Donald J"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Lisa Birnbach testified she had to whisper on the telephone to keep her children from hearing. ",
+          "copyright": "Anna Watts for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02trump-carroll-pgkq/02trump-carroll-pgkq-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02trump-carroll-pgkq/02trump-carroll-pgkq-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02trump-carroll-pgkq/02trump-carroll-pgkq-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/59169a8a-ff5a-5e55-af62-69c22501726a",
+      "url": "https://www.nytimes.com/2023/05/04/us/politics/jan-6-proud-boys-sedition.html",
+      "id": 100000008867575,
+      "asset_id": 100000008867575,
+      "source": "New York Times",
+      "published_date": "2023-05-04",
+      "updated": "2023-05-05 09:58:24",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Treason and Sedition;Storming of the US Capitol (Jan, 2021);Right-Wing Extremism and Alt-Right;United States Politics and Government;Decisions and Verdicts;Biggs, Joseph (1984- );Nordean, Ethan;Pezzola, Dominic;Rehl, Zach;Tarrio, Enrique;Proud Boys;Justice Department",
+      "column": null,
+      "byline": "By Alan Feuer and Zach Montague",
+      "type": "Article",
+      "title": "Four Proud Boys Convicted of Sedition in Key Jan. 6 Case",
+      "abstract": "The verdict was a blow against the far-right group and another milestone in the Justice Department’s prosecution of the pro-Trump rioters who stormed the Capitol.",
+      "des_facet": [
+        "Treason and Sedition",
+        "Storming of the US Capitol (Jan, 2021)",
+        "Right-Wing Extremism and Alt-Right",
+        "United States Politics and Government",
+        "Decisions and Verdicts"
+      ],
+      "org_facet": [
+        "Proud Boys",
+        "Justice Department"
+      ],
+      "per_facet": [
+        "Biggs, Joseph (1984- )",
+        "Nordean, Ethan",
+        "Pezzola, Dominic",
+        "Rehl, Zach",
+        "Tarrio, Enrique"
+      ],
+      "geo_facet": [],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/509d707e-aed1-527a-b411-7f0aebcdde19",
+      "url": "https://www.nytimes.com/2023/05/03/us/atlanta-shooting.html",
+      "id": 100000008889577,
+      "asset_id": 100000008889577,
+      "source": "New York Times",
+      "published_date": "2023-05-03",
+      "updated": "2023-05-04 12:59:19",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Mass Shootings;Patterson, Deion (May 3, 2023 Mass Shooting);Atlanta (Ga)",
+      "column": null,
+      "byline": "By Sean Keenan, Eduardo Medina, Remy Tumin and Johnny Diaz",
+      "type": "Article",
+      "title": "Suspect Caught After Killing 1 and Injuring 4 in Atlanta Shooting, Police Say",
+      "abstract": "The authorities said that the 24-year-old suspect in the attack at an Atlanta medical building had been caught after an extensive manhunt that lasted several hours.",
+      "des_facet": [
+        "Mass Shootings"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Patterson, Deion (May 3, 2023 Mass Shooting)"
+      ],
+      "geo_facet": [
+        "Atlanta (Ga)"
+      ],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/f71970dc-f041-57cf-89cd-6c4c2b320aeb",
+      "url": "https://www.nytimes.com/2023/05/04/us/new-jersey-pasta-dump.html",
+      "id": 100000008891010,
+      "asset_id": 100000008891010,
+      "source": "New York Times",
+      "published_date": "2023-05-04",
+      "updated": "2023-05-05 13:25:12",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Pasta;Waste Materials and Disposal;Jochnowitz, Nina;Old Bridge (NJ)",
+      "column": null,
+      "byline": "By Michael Levenson",
+      "type": "Article",
+      "title": "A New Jersey Mystery: Who Dumped Hundreds of Pounds of Pasta, and Why?",
+      "abstract": "The police and public works employees responded after “15 wheelbarrow loads” of pasta were dumped in mounds along a creek in Old Bridge, N.J.",
+      "des_facet": [
+        "Pasta",
+        "Waste Materials and Disposal"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Jochnowitz, Nina"
+      ],
+      "geo_facet": [
+        "Old Bridge (NJ)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "In Old Bridge, N.J., the mystery surrounding hundreds of pounds of pasta dumped by a creek is “all they’re talking about,” said Denise Bloom, an administrator of a local Facebook group.",
+          "copyright": "Nina Jochnowitz",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04xp-pasta/04xp-pasta-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04xp-pasta/04xp-pasta-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04xp-pasta/04xp-pasta-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/96a1a7ff-03f9-5ba1-93a6-6f566b285ffa",
+      "url": "https://www.nytimes.com/2023/05/04/well/eat/ultraprocessed-food-mental-health.html",
+      "id": 100000008773311,
+      "asset_id": 100000008773311,
+      "source": "New York Times",
+      "published_date": "2023-05-04",
+      "updated": "2023-05-05 11:14:43",
+      "section": "Well",
+      "subsection": "Eat",
+      "nytdsection": "well",
+      "adx_keywords": "Food;Diet and Nutrition;Research;Brain;Mental Health and Disorders;Content Type: Service",
+      "column": null,
+      "byline": "By Sally Wadyka",
+      "type": "Article",
+      "title": "The Link Between Highly Processed Foods and Brain Health",
+      "abstract": "Eating packaged foods like cereal and frozen meals has been associated with anxiety, depression and cognitive decline. Scientists are still piecing together why.",
+      "des_facet": [
+        "Food",
+        "Diet and Nutrition",
+        "Research",
+        "Brain",
+        "Mental Health and Disorders",
+        "Content Type: Service"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Jess Ebsworth",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/04/28/well/2Well-UltraPro-feature/2Well-UltraPro-feature-thumbStandard-v4.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/04/28/well/2Well-UltraPro-feature/2Well-UltraPro-feature-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/04/28/well/2Well-UltraPro-feature/2Well-UltraPro-feature-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://interactive/56f794ef-9a38-528c-af07-657efa9da2a7",
+      "url": "https://www.nytimes.com/interactive/2023/upshot/spelling-bee-buddy.html",
+      "id": 100000008839905,
+      "asset_id": 100000008839905,
+      "source": "New York Times",
+      "published_date": "2023-04-10",
+      "updated": "2023-05-09 04:03:50",
+      "section": "The Upshot",
+      "subsection": "",
+      "nytdsection": "the upshot",
+      "adx_keywords": "internal-open-access",
+      "column": null,
+      "byline": "By Neil Berg, Matthew Conlen, Josh Katz, Aaron Krolik, Eve Washington and Eden Weingart",
+      "type": "Interactive",
+      "title": "Spelling Bee Buddy: Personalized Hints That Update as You Play",
+      "abstract": "Customized hints that update based on your progress in today’s puzzle.",
+      "des_facet": [
+        "internal-open-access"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "",
+          "caption": "",
+          "copyright": "",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/03/31/us/beebuddy-promoimage/beebuddy-promoimage-thumbStandard-v4.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/03/31/us/beebuddy-promoimage/beebuddy-promoimage-mediumThreeByTwo210-v4.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/03/31/us/beebuddy-promoimage/beebuddy-promoimage-mediumThreeByTwo440-v4.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/49bc05ed-afbc-5354-aec5-e1d0f44206db",
+      "url": "https://www.nytimes.com/2023/05/06/world/europe/coronation-king-charles-what-happened.html",
+      "id": 100000008894486,
+      "asset_id": 100000008894486,
+      "source": "New York Times",
+      "published_date": "2023-05-06",
+      "updated": "2023-05-09 10:21:58",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Royal Families;Charles III, King of the United Kingdom;Great Britain",
+      "column": null,
+      "byline": "By The New York Times",
+      "type": "Article",
+      "title": "Missed the Coronation? Here’s What Happened, From the Crown to the Crowds.",
+      "abstract": "The lavish ceremony for Britain’s first new reigning monarch in 70 years, was brimming with ancient traditions with a few modern touches.",
+      "des_facet": [
+        "Royal Families"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Charles III, King of the United Kingdom"
+      ],
+      "geo_facet": [
+        "Great Britain"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "King Charles III and Queen Camilla waved to the crowd from the balcony at Buckingham Palace, after the coronation, on Saturday.",
+          "copyright": "Andrew Testa for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/06/multimedia/06coronation-roundup-vwzj/06coronation-roundup-vwzj-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/06/multimedia/06coronation-roundup-vwzj/06coronation-roundup-vwzj-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/06/multimedia/06coronation-roundup-vwzj/06coronation-roundup-vwzj-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/4ce05fb8-ad74-5079-8ce0-2a9428731f53",
+      "url": "https://www.nytimes.com/2023/05/04/nyregion/e-jean-carroll-trump-rape-trial.html",
+      "id": 100000008890741,
+      "asset_id": 100000008890741,
+      "source": "New York Times",
+      "published_date": "2023-05-04",
+      "updated": "2023-05-05 18:54:31",
+      "section": "New York",
+      "subsection": "",
+      "nytdsection": "new york",
+      "adx_keywords": "Sex Crimes;United States Politics and Government;Libel and Slander;Trump, Donald J;Carroll, E Jean;Kaplan, Lewis A;Stoynoff, Natasha;Tacopina, Joseph;Bergdorf Goodman",
+      "column": null,
+      "byline": "By Benjamin Weiser, Lola Fadulu and Kate Christobek",
+      "type": "Article",
+      "title": "In Rape Trial Deposition Video, Trump Says Vulgar Tape Simply Reflects Truth",
+      "abstract": "The former president did not disavow the “Access Hollywood” video when questioned by lawyers for E. Jean Carroll, who has accused him of attacking her. They rested their case Thursday.",
+      "des_facet": [
+        "Sex Crimes",
+        "United States Politics and Government",
+        "Libel and Slander"
+      ],
+      "org_facet": [
+        "Bergdorf Goodman"
+      ],
+      "per_facet": [
+        "Trump, Donald J",
+        "Carroll, E Jean",
+        "Kaplan, Lewis A",
+        "Stoynoff, Natasha",
+        "Tacopina, Joseph"
+      ],
+      "geo_facet": [],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/6c3a978f-456e-51c7-a547-92a2bacf2263",
+      "url": "https://www.nytimes.com/2023/05/02/us/politics/debt-limit-discharge-petition.html",
+      "id": 100000008883979,
+      "asset_id": 100000008883979,
+      "source": "New York Times",
+      "published_date": "2023-05-02",
+      "updated": "2023-05-03 11:44:53",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "National Debt (US);Law and Legislation;Federal Budget (US);United States Politics and Government;DeSaulnier, Mark James;House of Representatives;Democratic Party;Republican Party",
+      "column": null,
+      "byline": "By Carl Hulse",
+      "type": "Article",
+      "title": "House Democrats Move to Force a Debt-Limit Increase as Default Date Looms",
+      "abstract": "House Democratic leaders who have been quietly planning a strategy to force a debt ceiling increase to avert default began taking steps on Tuesday to deploy their secret weapon.",
+      "des_facet": [
+        "National Debt (US)",
+        "Law and Legislation",
+        "Federal Budget (US)",
+        "United States Politics and Government"
+      ],
+      "org_facet": [
+        "House of Representatives",
+        "Democratic Party",
+        "Republican Party"
+      ],
+      "per_facet": [
+        "DeSaulnier, Mark James"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Representative Mark DeSaulnier, Democrat of California, at a hearing in 2019. He introduced the 45-page legislation without fanfare in January.",
+          "copyright": "Pool photo by Patrick Semansky",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02dc-discharge1-gflt/02dc-discharge1-gflt-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02dc-discharge1-gflt/02dc-discharge1-gflt-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02dc-discharge1-gflt/02dc-discharge1-gflt-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/be107dfd-4458-512b-9e5d-299f3b93d550",
+      "url": "https://www.nytimes.com/2023/05/02/arts/music/gordon-lightfoot-edmund-fitzgerald-song.html",
+      "id": 100000008886709,
+      "asset_id": 100000008886709,
+      "source": "New York Times",
+      "published_date": "2023-05-02",
+      "updated": "2023-05-03 12:33:40",
+      "section": "Arts",
+      "subsection": "Music",
+      "nytdsection": "arts",
+      "adx_keywords": "Folk Music;Maritime Accidents and Safety;Lightfoot, Gordon;Lake Superior;Ontario (Canada);Michigan",
+      "column": null,
+      "byline": "By Mike Ives",
+      "type": "Article",
+      "title": "How ‘The Wreck of the Edmund Fitzgerald’ Defied Top 40 Logic",
+      "abstract": "Gordon Lightfoot’s 1976 folk ballad told the true story of a shipwreck on Lake Superior. One of his old friends called it “a documentarian’s song.”",
+      "des_facet": [
+        "Folk Music",
+        "Maritime Accidents and Safety"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Lightfoot, Gordon"
+      ],
+      "geo_facet": [
+        "Lake Superior",
+        "Ontario (Canada)",
+        "Michigan"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The Edmund Fitzgerald slides into its launching basin in Detroit on June 7, 1958. The ship would sink in Lake Superior 17 years later.",
+          "copyright": "Associated Press",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/03/multimedia/03xp-edmundfitzgerald-print/02xp-edmundfitzgerald-klvh-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/03/multimedia/03xp-edmundfitzgerald-print/02xp-edmundfitzgerald-klvh-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/03/multimedia/03xp-edmundfitzgerald-print/02xp-edmundfitzgerald-klvh-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/44ba4238-c4bb-5160-b56c-e363ba08b8b8",
+      "url": "https://www.nytimes.com/2023/05/03/sports/olympics/tori-bowie-dead.html",
+      "id": 100000008889174,
+      "asset_id": 100000008889174,
+      "source": "New York Times",
+      "published_date": "2023-05-03",
+      "updated": "2023-05-05 10:00:05",
+      "section": "Sports",
+      "subsection": "Olympics",
+      "nytdsection": "sports",
+      "adx_keywords": "Track and Field;Olympic Games (2016);Deaths (Obituaries);Running;Bowie, Tori (1990- );USA Track and Field;Brandon (Miss);Brazil",
+      "column": null,
+      "byline": "By Daniel E. Slotnik",
+      "type": "Article",
+      "title": "Tori Bowie, World Champion Sprinter, Is Dead at 32",
+      "abstract": "She won three Olympic medals in 2016 and the world championship the next year in an intense 100-meter dash.",
+      "des_facet": [
+        "Track and Field",
+        "Olympic Games (2016)",
+        "Deaths (Obituaries)",
+        "Running"
+      ],
+      "org_facet": [
+        "USA Track and Field"
+      ],
+      "per_facet": [
+        "Bowie, Tori (1990- )"
+      ],
+      "geo_facet": [
+        "Brandon (Miss)",
+        "Brazil"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Tori Bowie after winning the silver medal in the 100-meter dash at the 2016 Olympics in Rio de Janeiro.",
+          "copyright": "Adrian Dennis/Agence France-Presse &mdash; Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/03bowie1-jhkq-print1/03bowie1-jhkq-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/03bowie1-jhkq-print1/03bowie1-jhkq-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/03bowie1-jhkq-print1/03bowie1-jhkq-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/365489ef-5bca-5849-b6fa-32c75cbe4702",
+      "url": "https://www.nytimes.com/2023/05/01/fashion/met-gala-2023-photos.html",
+      "id": 100000008838660,
+      "asset_id": 100000008838660,
+      "source": "New York Times",
+      "published_date": "2023-05-01",
+      "updated": "2023-05-04 11:07:14",
+      "section": "Fashion",
+      "subsection": "",
+      "nytdsection": "fashion",
+      "adx_keywords": "Met Gala;Fashion and Apparel;vis-photo",
+      "column": null,
+      "byline": "By The Styles Desk",
+      "type": "Article",
+      "title": "2023 Met Gala: Full Red Carpet Roundup",
+      "abstract": "Some of the biggest names from Hollywood, fashion, politics, media and music arrived to honor Karl Lagerfeld for fashion’s biggest night.",
+      "des_facet": [
+        "Met Gala",
+        "Fashion and Apparel",
+        "vis-photo"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "ASAP Rocky and Rihanna, in Valentino.",
+          "copyright": "Jutharat Pinyodoonyachet for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/01/fashion/poupay-met-gala-2023-3297/poupay-met-gala-2023-3297-thumbStandard-v3.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/01/fashion/poupay-met-gala-2023-3297/poupay-met-gala-2023-3297-mediumThreeByTwo210-v3.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/01/fashion/poupay-met-gala-2023-3297/poupay-met-gala-2023-3297-mediumThreeByTwo440-v3.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/d1cfb67f-df33-5260-b086-5505c3301732",
+      "url": "https://www.nytimes.com/2023/05/04/us/politics/trump-documents-subpoenas-justice-department.html",
+      "id": 100000008891660,
+      "asset_id": 100000008891660,
+      "source": "New York Times",
+      "published_date": "2023-05-04",
+      "updated": "2023-05-05 09:04:25",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Classified Information and State Secrets;Search and Seizure;Special Prosecutors (Independent Counsel);United States Politics and Government;Subpoenas;Security and Warning Systems;Trump, Donald J;Smith, Jack (Attorney);Nauta, Walt;Calamari, Matthew F (1956- );Calamari, Matthew Jr (1993- );Corcoran, M Evan;Mar-a-Lago (Palm Beach, Fla);Federal Bureau of Investigation;Justice Department;National Archives and Records Administration;Trump Organization",
+      "column": null,
+      "byline": "By Maggie Haberman, Adam Goldman, Alan Feuer, Ben Protess and Michael S. Schmidt",
+      "type": "Article",
+      "title": "Justice Dept. Intensifying Efforts to Determine if Trump Hid Documents",
+      "abstract": "Prosecutors investigating the former president’s handling of classified material have issued a wave of new subpoenas and obtained the confidential cooperation of a witness who worked at Mar-a-Lago.",
+      "des_facet": [
+        "Classified Information and State Secrets",
+        "Search and Seizure",
+        "Special Prosecutors (Independent Counsel)",
+        "United States Politics and Government",
+        "Subpoenas",
+        "Security and Warning Systems"
+      ],
+      "org_facet": [
+        "Mar-a-Lago (Palm Beach, Fla)",
+        "Federal Bureau of Investigation",
+        "Justice Department",
+        "National Archives and Records Administration",
+        "Trump Organization"
+      ],
+      "per_facet": [
+        "Trump, Donald J",
+        "Smith, Jack (Attorney)",
+        "Nauta, Walt",
+        "Calamari, Matthew F (1956- )",
+        "Calamari, Matthew Jr (1993- )",
+        "Corcoran, M Evan"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Justice Department prosecutors have intensified their investigation of former President Donald J. Trump’s handling of classified material.",
+          "copyright": "Sophie Park for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04dc-investigate1-tlhj/04dc-investigate1-tlhj-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04dc-investigate1-tlhj/04dc-investigate1-tlhj-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/04/multimedia/04dc-investigate1-tlhj/04dc-investigate1-tlhj-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/b881b560-bcaa-559b-a42a-53aa901025e3",
+      "url": "https://www.nytimes.com/2023/05/02/world/asia/korea-us-comfort-women-sexual-slavery.html",
+      "id": 100000008801819,
+      "asset_id": 100000008801819,
+      "source": "New York Times",
+      "published_date": "2023-05-02",
+      "updated": "2023-05-03 09:46:24",
+      "section": "World",
+      "subsection": "Asia Pacific",
+      "nytdsection": "world",
+      "adx_keywords": "Women and Girls;Human Trafficking;Prostitution;Sex Crimes;Korean War;United States Defense and Military Forces;United States International Relations;Decisions and Verdicts;International Relations;Compensation for Damages (Law);South Korea",
+      "column": null,
+      "byline": "By Choe Sang-Hun and Jean Chung",
+      "type": "Article",
+      "title": "A Brutal Sex Trade Built for American Soldiers",
+      "abstract": "It’s a long-buried part of South Korean history: women compelled by force, trickery or desperation into prostitution, with the complicity of their own leaders.",
+      "des_facet": [
+        "Women and Girls",
+        "Human Trafficking",
+        "Prostitution",
+        "Sex Crimes",
+        "Korean War",
+        "United States Defense and Military Forces",
+        "United States International Relations",
+        "Decisions and Verdicts",
+        "International Relations",
+        "Compensation for Damages (Law)"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [
+        "South Korea"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "In Dongducheon, South Korea, north of Seoul, women forced to work as prostitutes to American soldiers in the decades after the Korean War were confined in this building when they were discovered to have a sexually transmitted disease.",
+          "copyright": "",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/10/multimedia/00skorea-comfortwomen-01-cmkw/00skorea-comfortwomen-01-cmkw-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/10/multimedia/00skorea-comfortwomen-01-cmkw/00skorea-comfortwomen-01-cmkw-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/10/multimedia/00skorea-comfortwomen-01-cmkw/00skorea-comfortwomen-01-cmkw-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/0fbbb0b8-e26c-511d-8d42-04c84d3a03ae",
+      "url": "https://www.nytimes.com/2023/05/03/books-review/tucker-carlson-text-message-whiteness.html",
+      "id": 100000008889406,
+      "asset_id": 100000008889406,
+      "source": "New York Times",
+      "published_date": "2023-05-03",
+      "updated": "2023-05-06 07:36:32",
+      "section": "Book Review",
+      "subsection": "",
+      "nytdsection": "book review",
+      "adx_keywords": "News and News Media;Whites;Race and Ethnicity;Text Messaging;audio-neutral-informative;Carlson, Tucker;Fox News Channel",
+      "column": null,
+      "byline": "By A.O. Scott",
+      "type": "Article",
+      "title": "Tucker Carlson’s Code of Whiteness",
+      "abstract": "The racial ideology revealed in the former Fox News host’s text message.",
+      "des_facet": [
+        "News and News Media",
+        "Whites",
+        "Race and Ethnicity",
+        "Text Messaging",
+        "audio-neutral-informative"
+      ],
+      "org_facet": [
+        "Fox News Channel"
+      ],
+      "per_facet": [
+        "Carlson, Tucker"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The former Fox News host Tucker Carlson, on May 24, 2022.",
+          "copyright": "Mark Peterson/Redux",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/03/books/review/03Scott-essay-Tucker-Carlson/03Scott-essay-Tucker-Carlson-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/03/books/review/03Scott-essay-Tucker-Carlson/03Scott-essay-Tucker-Carlson-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/03/books/review/03Scott-essay-Tucker-Carlson/03Scott-essay-Tucker-Carlson-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/0da54837-f302-5f76-a9b9-4373cc7cbf48",
+      "url": "https://www.nytimes.com/2023/05/06/opinion/supremely-arrogant.html",
+      "id": 100000008894047,
+      "asset_id": 100000008894047,
+      "source": "New York Times",
+      "published_date": "2023-05-06",
+      "updated": "2023-05-08 18:12:57",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "Corruption (Institutional);Abortion;Gifts to Public Officials;Ethics and Official Misconduct;Conflicts of Interest;Gorsuch, Neil M;Gorsuch Burford, Anne;Alito, Samuel A Jr;Thomas, Clarence;Thomas, Virginia Lamp;Crow, Harlan;Roberts, John G Jr;Supreme Court (US);Environmental Protection Agency",
+      "column": null,
+      "byline": "By Maureen Dowd",
+      "type": "Article",
+      "title": "Supremely Arrogant",
+      "abstract": "Are these men interpreting the law or settling scores?",
+      "des_facet": [
+        "Corruption (Institutional)",
+        "Abortion",
+        "Gifts to Public Officials",
+        "Ethics and Official Misconduct",
+        "Conflicts of Interest"
+      ],
+      "org_facet": [
+        "Supreme Court (US)",
+        "Environmental Protection Agency"
+      ],
+      "per_facet": [
+        "Gorsuch, Neil M",
+        "Gorsuch Burford, Anne",
+        "Alito, Samuel A Jr",
+        "Thomas, Clarence",
+        "Thomas, Virginia Lamp",
+        "Crow, Harlan",
+        "Roberts, John G Jr"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Elizabeth Frantz/Reuters",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06Dowd-3-vhjw/06Dowd-3-vhjw-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06Dowd-3-vhjw/06Dowd-3-vhjw-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/09/multimedia/06Dowd-3-vhjw/06Dowd-3-vhjw-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/4dcce570-cdc5-5230-ba28-866cdc3d0622",
+      "url": "https://www.nytimes.com/2023/05/04/business/katie-cotton-dead.html",
+      "id": 100000008889101,
+      "asset_id": 100000008889101,
+      "source": "New York Times",
+      "published_date": "2023-05-04",
+      "updated": "2023-05-06 21:24:20",
+      "section": "Business",
+      "subsection": "",
+      "nytdsection": "business",
+      "adx_keywords": "Deaths (Obituaries);Computers and the Internet;Public Relations and Publicity;Advertising and Marketing;News and News Media;Cotton, Katie (1965-2023);Jobs, Steven P;Apple Inc",
+      "column": null,
+      "byline": "By Richard Sandomir",
+      "type": "Article",
+      "title": "Katie Cotton, Who Helped Raise Apple’s Profile, Dies at 57",
+      "abstract": "As head of public relations, she worked closely with Steve Jobs, the company’s visionary chief executive, to spread the word about products like the iMac and the iPhone.",
+      "des_facet": [
+        "Deaths (Obituaries)",
+        "Computers and the Internet",
+        "Public Relations and Publicity",
+        "Advertising and Marketing",
+        "News and News Media"
+      ],
+      "org_facet": [
+        "Apple Inc"
+      ],
+      "per_facet": [
+        "Cotton, Katie (1965-2023)",
+        "Jobs, Steven P"
+      ],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Ms. Cotton in 2012. “She was formidable and tough,” one journalist said, “and very protective of both Apple’s brand and Steve.”",
+          "copyright": "Apple",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/07/multimedia/04cotton3-htwv-print2/04cotton3-htwv-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/07/multimedia/04cotton3-htwv-print2/04cotton3-htwv-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/07/multimedia/04cotton3-htwv-print2/04cotton3-htwv-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/513ca058-6f8f-5591-9154-77854a1538e6",
+      "url": "https://www.nytimes.com/2023/05/06/nyregion/connie-converse-nyc.html",
+      "id": 100000008880449,
+      "asset_id": 100000008880449,
+      "source": "New York Times",
+      "published_date": "2023-05-06",
+      "updated": "2023-05-09 07:49:20",
+      "section": "New York",
+      "subsection": "",
+      "nytdsection": "new york",
+      "adx_keywords": "Content Type: Personal Profile;Folk Music;Pop and Rock Music;Audio Recordings, Downloads and Streaming;Nineteen Hundred Fifties;internal-sub-only;Converse, Elizabeth Eaton (Connie);Greenwich Village (Manhattan, NY);Upper West Side (Manhattan, NY);Manhattan (NYC)",
+      "column": null,
+      "byline": "By Howard Fishman",
+      "type": "Article",
+      "title": "Before Dylan, There Was Connie Converse. Then She Vanished.",
+      "abstract": "There’s a resurgence of interest in the pioneering singer-songwriter who disappeared when she was 50.",
+      "des_facet": [
+        "Content Type: Personal Profile",
+        "Folk Music",
+        "Pop and Rock Music",
+        "Audio Recordings, Downloads and Streaming",
+        "Nineteen Hundred Fifties",
+        "internal-sub-only"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Converse, Elizabeth Eaton (Connie)"
+      ],
+      "geo_facet": [
+        "Greenwich Village (Manhattan, NY)",
+        "Upper West Side (Manhattan, NY)",
+        "Manhattan (NYC)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Connie Converse in Riverside Park, 1946. It is one of the first known images of Ms. Converse in New York.",
+          "copyright": "Lois Aime",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/00converse-02-qtwl/00converse-02-qtwl-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/00converse-02-qtwl/00converse-02-qtwl-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/00converse-02-qtwl/00converse-02-qtwl-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/8556e3ab-cee8-58b9-8b94-7dce7cb78cec",
+      "url": "https://www.nytimes.com/2023/05/06/fashion/coronation-fashion-kate-middleton-jill-biden-katy-perry.html",
+      "id": 100000008890989,
+      "asset_id": 100000008890989,
+      "source": "New York Times",
+      "published_date": "2023-05-06",
+      "updated": "2023-05-07 12:24:27",
+      "section": "Fashion",
+      "subsection": "",
+      "nytdsection": "fashion",
+      "adx_keywords": "Royal Families;Fashion and Apparel;your-feed-fashion;Charles III, King of the United Kingdom;Camilla, Queen Consort of the United Kingdom;Catherine, Duchess of Cambridge;Great Britain",
+      "column": null,
+      "byline": "By Vanessa Friedman",
+      "type": "Article",
+      "title": "Coronation Fashion: Queen Camilla, Princess Catherine and Clothes Full of Meaning",
+      "abstract": "Why a dress is never just a dress at a major occasion of State.",
+      "des_facet": [
+        "Royal Families",
+        "Fashion and Apparel",
+        "your-feed-fashion"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Charles III, King of the United Kingdom",
+        "Camilla, Queen Consort of the United Kingdom",
+        "Catherine, Duchess of Cambridge"
+      ],
+      "geo_facet": [
+        "Great Britain"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Catherine, Princess of Wales, wearing a white crepe Alexander McQueen gown under her royal robes.",
+          "copyright": "Pool photo by Dan Charity",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/06/multimedia/06coronation-fashion-kate2-qgcl/06coronation-fashion-kate2-qgcl-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/06/multimedia/06coronation-fashion-kate2-qgcl/06coronation-fashion-kate2-qgcl-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/06/multimedia/06coronation-fashion-kate2-qgcl/06coronation-fashion-kate2-qgcl-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/da2b091b-9cf3-572c-8dd7-443977a9f097",
+      "url": "https://www.nytimes.com/2023/05/02/us/texas-shooting-suspect-arrested.html",
+      "id": 100000008888648,
+      "asset_id": 100000008888648,
+      "source": "New York Times",
+      "published_date": "2023-05-02",
+      "updated": "2023-05-03 23:42:18",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Murders, Attempted Murders and Homicides;Fugitives;Cleveland (Tex)",
+      "column": null,
+      "byline": "By J. David Goodman",
+      "type": "Article",
+      "title": "Man Accused of Killing 5 in Texas Had Help Evading Capture, Officials Say",
+      "abstract": "The man, Francisco Oropesa, was caught a few miles from the site of the shooting, hiding under a pile of laundry, the county sheriff said.",
+      "des_facet": [
+        "Murders, Attempted Murders and Homicides",
+        "Fugitives"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [
+        "Cleveland (Tex)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Raquel Natalicchio/Houston Chronicle, via Associated Press",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02nat-texas-arrest-1-mgct/02nat-texas-arrest-1-mgct-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02nat-texas-arrest-1-mgct/02nat-texas-arrest-1-mgct-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2023/05/02/multimedia/02nat-texas-arrest-1-mgct/02nat-texas-arrest-1-mgct-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ]
+}

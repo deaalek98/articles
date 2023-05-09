@@ -12,7 +12,7 @@ class ArticlesMainApi {
         "all-sections/${params.numDays}.json?api-key=$API_KEY",
       ))
           .data;
-      List<dynamic>? bodyList = result["results"];
+      List<dynamic>? bodyList = result?["results"];
       List<ArticleModel> list = [];
       bodyList?.forEach((element) {
         list.add(ArticleModel.fromJson(element));
@@ -20,9 +20,9 @@ class ArticlesMainApi {
       // BalanceInfoModel.fromJson(body)
       return Right(list);
     } on DioError catch (e) {
-      throw ServerException(handleDioError(e), e.response?.statusCode);
+      return Left(ServerFailure(handleDioError(e), statusCode: e.response?.statusCode)) ;
     } catch (e) {
-      throw ServerException(e.toString(), null);
+      return Left(ServerFailure(e.toString(),  )) ;
     }
   }
 }

@@ -17,12 +17,12 @@ class ArticlesMainRepositoryImpl extends ArticlesMainRepository {
     try {
       final result = await articlesMainApi.getArticlesData(params: params);
       return result.fold((l) {
-        return Left(ServerFailure(l.errorMessage, null));
+        return Left(ServerFailure(l.errorMessage,  ));
       }, (r) {
         return Right(r);
       });
     } on ServerException catch (e) {
-      return Left(ServerFailure(e.message, e.statusCode));
+      return Left(ServerFailure(e.message,statusCode:  e.statusCode));
     }
   }
 }

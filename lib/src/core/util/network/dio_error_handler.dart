@@ -19,13 +19,13 @@ String handleDioError(DioError error) {
     case DioErrorType.badResponse:
       {
         if (error.response?.statusCode == 422) {
-          errorDescription = error.response?.data["body"] == null
-              ? error.response?.data ?? "Unknown Error"
-              : error.response?.data["body"]["validations"].values.first[0] ?? error.response?.data["message"] ?? "Unknown Error";
+          errorDescription = (error.response?.data is Map && error.response?.data["body"] != null)
+              ? error.response?.data["body"]["validations"].values.first[0] ?? error.response?.data["message"] ?? "Unknown Error"
+              :error.response?.data ?? "Unknown Error" ;
         } else if (error.response?.statusCode == 400) {
           errorDescription = error.response?.data ?? "Unknown Error";
         } else if (error.response?.statusCode == 401) {
-          errorDescription = error.response?.data ?? "Unknown Error";
+          errorDescription = error.response?.data ?? "Unauthorized";
         } else if (error.response?.statusCode == 403) {
           errorDescription = error.response?.data ?? "Unknown Error";
         } else if (error.response?.statusCode == 404) {
