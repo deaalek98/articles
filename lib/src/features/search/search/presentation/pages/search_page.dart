@@ -69,7 +69,9 @@ class _SearchPageState extends State<SearchPage> {
                       height: SizeConfig.h(10),
                     ),
                     Expanded(
-                      child: ListView.builder(
+                      child:
+
+                      viewList.length == 0 ? ReloadWidget.empty(  content: "No Records" ) :ListView.builder(
                         itemCount: viewList.length,
                         itemBuilder: (context, i) {
                           return Column(

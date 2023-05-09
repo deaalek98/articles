@@ -57,17 +57,11 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           children: [
             IconButton(
               onPressed: () {
-                // Provider.of<ThemeProvider>(context, listen: false)
-                //     .changeTheme();
-
                 BlocProvider.of<SettingsBloc>(navigatorKey.currentContext!).add(UpdateModeEvent(isDarkMode: !sl<AppSharedPrefs>().getIsDarkTheme()));
                 setState(() {});
               },
               icon: Icon(
                 Icons.light_mode
-                // (Provider.of<ThemeProvider>(context).isDark)
-                //     ? Icons.light_mode
-                //     : Icons.dark_mode,
                 ,
                 color: Theme.of(context).primaryColor,
               ),
@@ -75,6 +69,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           ],
         ),
         actions: [
+          if (listAll.length > 0)
           IconButton(
             onPressed: () {
               Navigator.of(context).pushNamed("/search_page", arguments: listAll);

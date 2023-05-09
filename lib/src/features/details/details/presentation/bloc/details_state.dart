@@ -5,16 +5,13 @@ abstract class DetailsState {}
 
 class DetailsInitial extends DetailsState {}
 
-/// State when success get transaction
+/// State when success get data
 class DetailsLoadingState extends DetailsState {}
 
-/// State when success get transaction
 class DetailsSuccessState extends DetailsState {
-
   DetailsSuccessState();
 }
 
-/// State when failure get transaction
 class DetailsFailureState extends DetailsState {
   final String message;
 
