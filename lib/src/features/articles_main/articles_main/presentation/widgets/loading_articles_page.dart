@@ -5,7 +5,7 @@ import 'package:articles/src/core/common/presentation/widgets/image_network_widg
 import 'package:articles/src/core/core.dart';
 import 'package:articles/src/core/util/helper_ui.dart';
 import 'package:articles/src/features/articles_main/articles_main/domain/entities/article_model.dart';
-import 'package:articles/src/features/articles_main/articles_main/presentation/widgets/article_card_widget.dart';
+import 'package:articles/src/core/common/presentation/widgets/article_card_widget.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

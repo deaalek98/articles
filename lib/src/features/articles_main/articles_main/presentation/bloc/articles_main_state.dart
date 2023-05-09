@@ -11,8 +11,9 @@ class ArticlesMainLoadingState extends ArticlesMainState {}
 class ArticlesMainSuccessState extends ArticlesMainState {
   final List<ArticleModel> listArticles;
   final List<ArticleModel> slider;
+  final List<ArticleModel> all;
 
-  ArticlesMainSuccessState({required this.listArticles, required this.slider});
+  ArticlesMainSuccessState({required this.all, required this.listArticles, required this.slider});
 }
 
 class ArticlesMainFailureState extends ArticlesMainState {

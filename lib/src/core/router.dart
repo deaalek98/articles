@@ -1,6 +1,7 @@
 import 'package:articles/src/features/articles_main/articles_main/domain/entities/article_model.dart';
 import 'package:articles/src/features/articles_main/articles_main/presentation/pages/articles_main_page.dart';
 import 'package:articles/src/features/details/details/presentation/pages/details_page.dart';
+import 'package:articles/src/features/search/search/presentation/pages/search_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -18,8 +19,14 @@ class AppRouter {
         return CupertinoPageRoute(
             settings: RouteSettings(name: settings.name),
             builder: (_) => DetailsPage(
-                  articleModel: settings.arguments as ArticleModel,
-                ));
+              articleModel: settings.arguments as ArticleModel,
+            ));
+      case '/search_page':
+        return CupertinoPageRoute(
+            settings: RouteSettings(name: settings.name),
+            builder: (_) => SearchPage(
+              listArticle: (settings.arguments as List<ArticleModel>),
+            ));
 
       default:
         return CupertinoPageRoute(

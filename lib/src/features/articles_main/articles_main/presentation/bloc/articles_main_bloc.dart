@@ -16,11 +16,9 @@ class ArticlesMainBloc extends Bloc<ArticlesMainDataEvent, ArticlesMainState> {
     on<ArticlesMainDataEvent>(_getArticlesMainDataEvent);
   }
 
-  _getArticlesMainDataEvent(
-      ArticlesMainDataEvent event, Emitter<ArticlesMainState> emitter) async {
+  _getArticlesMainDataEvent(ArticlesMainDataEvent event, Emitter<ArticlesMainState> emitter) async {
     emitter(ArticlesMainLoadingState());
-    final response =
-        await articlesUseCase.call(ArticlesDataParams(event.numDays));
+    final response = await articlesUseCase.call(ArticlesDataParams(event.numDays));
     response.fold((l) {
       emitter(ArticlesMainFailureState(l.errorMessage));
     }, (r) async {
@@ -35,8 +33,7 @@ class ArticlesMainBloc extends Bloc<ArticlesMainDataEvent, ArticlesMainState> {
       } else {
         listArticles.addAll(r);
       }
-      emitter(
-          ArticlesMainSuccessState(listArticles: listArticles, slider: slider));
+      emitter(ArticlesMainSuccessState(listArticles: listArticles, slider: slider, all: r));
     });
   }
 }

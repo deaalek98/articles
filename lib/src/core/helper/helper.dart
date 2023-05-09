@@ -24,4 +24,5 @@ class Helper {
   static List<int> getListFilter() {
     return [1, 7, 30];
   }
+
 }

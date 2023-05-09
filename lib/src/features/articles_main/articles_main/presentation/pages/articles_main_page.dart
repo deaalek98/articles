@@ -5,7 +5,7 @@ import 'package:articles/src/core/common/presentation/widgets/image_network_widg
 import 'package:articles/src/core/core.dart';
 import 'package:articles/src/core/util/helper_ui.dart';
 import 'package:articles/src/features/articles_main/articles_main/domain/entities/article_model.dart';
-import 'package:articles/src/features/articles_main/articles_main/presentation/widgets/article_card_widget.dart';
+import 'package:articles/src/core/common/presentation/widgets/article_card_widget.dart';
 import 'package:articles/src/features/articles_main/articles_main/presentation/widgets/loading_articles_page.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +25,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
   late TabController tabController;
 
   // List<String> sections = DataHelper.instance.getSections();
+  List<ArticleModel> listAll = [];
   List<ArticleModel> listArticles = [];
   List<ArticleModel> listSlider = [];
   final CarouselController _controller = CarouselController();
@@ -75,7 +76,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed("/search_page", arguments: listAll);
+            },
             icon: Icon(Icons.search),
           ),
           IconButton(
@@ -110,6 +113,8 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
               listArticles.addAll(state.listArticles);
               listSlider.clear();
               listSlider.addAll(state.slider);
+              listAll.clear();
+              listAll.addAll(state.all);
             }
           },
           builder: (context, state) {
@@ -168,32 +173,6 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
       ),
     );
 
-    // return SafeArea(
-    //   bottom: false,
-    //   child: Scaffold(
-    //     body: const Center(child: Text("Page")),
-    //     appBar: AppBar(
-    //       title: const Text("Test App"),
-    //       actions: [
-    //         InkWell(
-    //             onTap: () {
-    //               BlocProvider.of<SettingsBloc>(navigatorKey.currentContext!)
-    //                   .add(UpdateLanguageEvent(language: sl<AppSharedPrefs>().getLang() == "en" ? "ar" : "en"));
-    //               setState(() {});
-    //             },
-    //             child: Container(
-    //                 padding: const EdgeInsets.all(14),
-    //                 child: Center(child: Text(sl<AppSharedPrefs>().getLang() == "en" ? S.of(context).ar : S.of(context).en))))
-    //       ],
-    //       leading: IconButton(
-    //           onPressed: () {
-    //             BlocProvider.of<SettingsBloc>(navigatorKey.currentContext!).add(UpdateModeEvent(isDarkMode: !sl<AppSharedPrefs>().getIsDarkTheme()));
-    //             setState(() {});
-    //           },
-    //           icon: Icon(sl<AppSharedPrefs>().getIsDarkTheme() ? Icons.lightbulb_outline : Icons.lightbulb)),
-    //     ),
-    //   ),
-    // );
   }
 
   _buildSliderWidget() {
