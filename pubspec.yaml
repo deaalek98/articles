@@ -66,6 +66,8 @@ dependencies:
   http_mock_adapter: ^0.4.4
   mockito: ^5.4.0
 
+dependency_overrides:
+  intl: 0.18.0
 
 dev_dependencies:
   flutter_test:
